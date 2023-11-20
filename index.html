@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body{
+        background: #000;
+    }
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+    #myDIV{
+        display: none;
+    }
+    #message{
+        background: #fff;
+        width: 700px;
+        margin: auto;
+        padding: 10px;
+    }
+    #message h2 {
+        text-align: center;
+        font-size: 37px;
+    }
+    #message p {
+        text-align: center;
+        font-size: 20px;
+    }
+    .btn{
+        text-align: center;
+        width: 200px;
+        margin: auto;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: 20px;
+        background: #000;
+        border: none; 
+        color: white;
+        cursor: pointer;
+    }
+    
+    .btn:hover{
+        background: #ddd;
+    }
+</style>
+</head>
+<body>
+    <div id="message">
+        <h2>Dasola Team</h2>
+        <p>Hello there, how are you doing? Hope you're doing good. <br>
+            This is an Important messeage from Dasola Team...<br>
+        Kindly click the button below to see</p>
+
+        <button class="btn" onclick="myFunction()">Click here</button>
+
+        <div id="myDIV">
+        <h3>We're Glad you clicked on the button</h3>
+            <p>We would like you to reachout to us on telegram or whatsappp,
+            <br>for better communication because there're some words that fiverr didn't<br> allow on their marketplace so we would be happy if you can contact us on<br> whatsapp for safety of our account...</p>
+            <p>Here is our whatsapp : <b>+2347031451719</b></p>
+            <span>Thanks for your understanding!!</span>
+            <hr>
+            <a><i class="fa fa-whatsapp" style="font-size: 30px; color: green;"></i></a>
+            <a><i class="fa fa-facebook" style="font-size: 30px; color: green;"></i></a>
+            <a><i class="fa fa-youtube" style="font-size: 30px; color: green;"></i></a>
+            <a><i class="fa fa-twitter" style="font-size: 30px; color: green;"></i></a>
+        </div>
+    </div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
